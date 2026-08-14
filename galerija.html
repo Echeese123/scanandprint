@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galerija | Scan & Print</title>
+
+    <meta
+        name="description"
+        content="Galerija radova Scan & Print – majice, vez, graviranje, digitalna štampa i promo materijal."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+
+            <img
+                src="slike/Logo crni.png"
+                alt="Scan & Print"
+            >
+
+        </a>
+
+
+        <nav class="desktop-menu">
+
+            <a href="index.html">
+                Početna
+            </a>
+
+            <a href="usluge.html">
+                Usluge
+            </a>
+
+            <a href="galerija.html">
+                Galerija
+            </a>
+
+            <a href="firme.html">
+                Za firme
+            </a>
+
+            <a href="index.html#kontakt">
+                Kontakt
+            </a>
+
+            <a
+                href="index.html#upit"
+                class="nav-button"
+            >
+                Pošalji upit
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            aria-label="Otvori meni"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+
+    <div class="mobile-menu">
+
+        <a href="index.html">
+            Početna
+        </a>
+
+        <a href="usluge.html">
+            Usluge
+        </a>
+
+        <a href="galerija.html">
+            Galerija
+        </a>
+
+        <a href="firme.html">
+            Za firme
+        </a>
+
+        <a href="index.html#kontakt">
+            Kontakt
+        </a>
+
+        <a
+            href="index.html#upit"
+            class="mobile-button"
+        >
+            Pošalji upit
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= GALLERY HERO ================= -->
+
+<section class="gallery-hero">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            NAŠI RADOVI
+        </span>
+
+        <h1>
+            Galerija
+            <span>proizvoda.</span>
+        </h1>
+
+        <p>
+            Pogledaj deo naših radova i pronađi
+            inspiraciju za svoj sledeći projekat.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery section">
+
+    <div class="container">
+
+
+        <!-- FILTERS -->
+
+        <div class="gallery-filters">
+
+            <button
+                class="gallery-filter active"
+                data-filter="all"
+            >
+                Sve
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="majice"
+            >
+                Majice & tekstil
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="vez"
+            >
+                Vez
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="graviranje"
+            >
+                Graviranje
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="stampa"
+            >
+                Digitalna štampa
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="promo"
+            >
+                Promo materijal
+            </button>
+
+        </div>
+
+
+
+        <!-- GALLERY GRID -->
+
+        <div
+            class="gallery-grid"
+            id="galleryGrid"
+        >
+
+            <!-- slike ubacuje JavaScript -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta section">
+
+    <div class="container cta-inner">
+
+        <span class="eyebrow">
+            SVIĐA TI SE NEŠTO?
+        </span>
+
+        <h2>
+            Hajde da napravimo
+            <span>i tvoje.</span>
+        </h2>
+
+        <p>
+            Pošalji nam ideju i dogovorićemo
+            sve detalje.
+        </p>
+
+        <a
+            href="index.html#upit"
+            class="button light"
+        >
+            Pošalji upit
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-inner">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="slike/Logo beli.png"
+                alt="Scan & Print"
+            >
+
+        </a>
+
+        <p>
+            © 2026 Scan & Print
+        </p>
+
+<a
+    href="https://www.instagram.com/scan_print_bp/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <img
+        src="slike/iq.png"
+        alt="Instagram Scan & Print"
+        style="width: 50px; height: 50px;"
+    >
+</a>
+    </div>
+
+</footer>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Zatvori"
+    >
+        ×
+    </button>
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Prethodna slika"
+    >
+        ‹
+    </button>
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt=""
+        >
+
+        <div
+            class="lightbox-caption"
+            id="lightboxCaption"
+        ></div>
+
+    </div>
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext"
+        aria-label="Sledeća slika"
+    >
+        ›
+    </button>
+
+</div>
+<script src="script.js"></script>
+
+<script src="galerija.js"></script>
+
+</body>
+
+</html>
